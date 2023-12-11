@@ -32,6 +32,12 @@ body{
     padding: 0 2rem;
 }
 
+.ingat{
+	text-align: left;
+	color: #555;
+	font-size: 0.9rem;
+}
+
 .img{
 	display: flex;
 	justify-content: flex-end;
