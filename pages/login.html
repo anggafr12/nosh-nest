@@ -14,7 +14,7 @@
 			<img src="../assets/bg.svg">
 		</div>
 		<div class="login-content">
-			<form action="index.html">
+			<form action="login.php" method="post">
 				<img src="../assets/user.png">
 				<h2 class="title">Welcome</h2>
            		<div class="input-div one">
@@ -23,7 +23,7 @@
            		   </div>
            		   <div class="div">
            		   		<h5>Username</h5>
-           		   		<input type="text" class="input">
+           		   		<input type="text" id="username" name="username" required class="input">
            		   </div>
            		</div>
            		<div class="input-div pass">
@@ -32,7 +32,7 @@
            		   </div>
            		   <div class="div">
            		    	<h5>Password</h5>
-           		    	<input type="password" class="input">
+           		    	<input type="password" id="password" name="password" required class="input">
             	   </div>
             	</div>
 				<div class="div">
@@ -47,6 +47,10 @@
             </form>
         </div>
     </div>
+	<div class="error-popup" id="errorPopup">
+		<span id="errorMessage"></span>
+		<button onclick="closeErrorPopup()">Tutup</button>
+	</div>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
