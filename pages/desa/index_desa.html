@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NOSH NEST | ADMIN DESA</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
-    <h1>Anda masuk desa</h1>
+    <header class="header">
+        <nav>
+          <div class="nav__logo"><a href="#">ADMIN DESA</a></div>
+          <ul class="nav__links" id="nav-links">
+            <li class="link"><a href="#home">REQUEST BARANG</a></li>
+            <li class="link"><a href="#choose">DATA KECAMATAN</a></li>
+            <button type="button" class="btn btn-primary">KELUAR</button>
+          </ul>
+          <div class="nav__menu__btn" id="menu-btn">
+            <span><i class="ri-menu-line"></i></span>
+          </div>
+          <div class="nav__actions">
+            <span><i class="ri-search-fill"></i></span>
+            <span><i class="ri-user-fill"></i></span>
+          </div>
+        </nav>
+        <div class="section__container header__container" id="home">
+          <h1>NoshNest: Menyambungkan Desa, Melayani Kebutuhan Pangan. </h1>
+          <p>
+            Amanah Pangan untuk Desa Sejahtera! Satukan Langkah, Sediakan Ketersediaan Makanan untuk Semua.
+          </p>
+          <form action="/">
+            <input type="text" placeholder="Cari Lumbung Pangan" />
+            <button><i class="ri-search-line"></i></button>
+          </form>
+          <a href="#choose"><i class="ri-arrow-down-double-line"></i></a>
+        </div>
+      </header>
 </body>
 </html>
