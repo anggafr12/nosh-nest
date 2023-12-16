@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             // Mengarahkan ke halaman yang sesuai dengan levels
             if ($user_data['levels'] == 'kecamatan') {
-                header("Location: lumbung/index_lumbung.html");
+                header("Location: lumbung/index_lumbung.php");
             } elseif ($user_data['levels'] == 'desa') {
                 header("Location: desa/index_desa.html");
             } else {
