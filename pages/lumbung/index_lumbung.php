@@ -1,5 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+// Mulai sesi
+session_start();
+
+// Fungsi koneksi ke database
+include '../../connection/kon.php';
+
+// Cek apakah pengguna sudah login
+if (!isset($_SESSION['username'])) {
+    // Jika tidak, arahkan ke halaman login atau lakukan tindakan lain sesuai kebutuhan Anda
+    header("Location: ../../index.html");
+    exit();
+}
+
+// Fungsi logout
+if (isset($_GET['logout'])) {
+    // Hapus semua data sesi
+    session_unset();
+    
+    // Hancurkan sesi
+    session_destroy();
+
+    // Redirect ke halaman login atau halaman lainnya
+    header("Location: ../../index.html");
+    exit();
+}
+?>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -58,6 +86,7 @@
                 <th>Jumlah</th>
                 <th>Harga</th>
                 <th>Tanggal</th>
+                <th>Aksi</th>
             </tr>
             <?php 
             include '../../connection/koneksi.php';
@@ -72,6 +101,11 @@
                     <td><?php echo $d['jumlah']; ?></td>
                     <td><?php echo $d['harga']; ?></td>
                     <td><?php echo $d['tanggal']; ?></td>
+                    <td>
+                    <!-- Tambah tombol Edit dan Hapus -->
+                        <button onclick="editBarang('<?php echo $d['kode']; ?>')">Edit</button>
+                        <button onclick="hapusBarang('<?php echo $d['kode']; ?>')">Hapus</button>
+                    </td>
                 </tr>
                 <?php 
             }
@@ -92,13 +126,33 @@
     <!-- JavaScript Functions -->
     <script>
         function logout() {
-            // Add your logout logic here
-            alert("Logout function will be implemented.");
+        // Konfirmasi logout
+        if (confirm("Apakah Anda yakin ingin keluar?")) {
+            // Redirect ke halaman logout dengan menyertakan parameter logout
+            window.location.href = 'index_lumbung.php?logout=1';
         }
-        
+        }
+
         function inputBarang() {
-        // Mengarahkan pengguna ke halaman input_barang.php
+            // Mengarahkan pengguna ke halaman input_barang.php
             window.location.href = 'input_barang.php';
+        }
+
+        function ubahBarang() {
+            // Mengarahkan pengguna ke halaman input_barang.php
+            window.location.href = 'ubah_barang.php';
+        }
+
+        function editBarang(kode) {
+            // Mengarahkan pengguna ke halaman edit_barang.php dengan menyertakan parameter kode
+            window.location.href = 'ubah_barang.php?kode=' + kode;
+        }
+
+        function hapusBarang(kode) {
+            // Konfirmasi hapus, jika disetujui, mengarahkan pengguna ke halaman hapus_barang.php dengan menyertakan parameter kode
+            if (confirm("Apakah Anda yakin ingin menghapus data ini?")) {
+                window.location.href = 'hapus_barang.php?kode=' + kode;
+            }
         }
     </script>
 </body>

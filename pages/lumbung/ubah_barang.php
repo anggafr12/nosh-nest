@@ -1,6 +1,6 @@
 <?php
 // Sisipkan file koneksi.php
-require_once('../../connection/koneksi.php');
+require_once('../../connection/kon.php');
 
 // Ambil kode barang dari parameter GET
 if (isset($_GET['kode'])) {
@@ -16,46 +16,69 @@ if (isset($_GET['kode'])) {
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
 
-        // Tampilkan tabel dengan data barang
-        echo '<h2>Data Barang</h2>';
-        echo '<table border="1">
-                <tr>
-                    <th>Kode</th>
-                    <th>Nama</th>
-                    <th>Jumlah</th>
-                    <th>Harga</th>
-                    <th>Tanggal</th>
-                </tr>
-                <tr>
-                    <td>' . $row['kode'] . '</td>
-                    <td>' . $row['nama'] . '</td>
-                    <td>' . $row['jumlah'] . '</td>
-                    <td>' . $row['harga'] . '</td>
-                    <td>' . $row['tanggal'] . '</td>
-                </tr>
-            </table>';
+        // Form untuk mengubah data barang
+        ?>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Ubah Data Barang</title>
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        </head>
+        <body>
+            <div class="container mt-4">
+                <h2 class="section__header">UBAH DATA BARANG</h2>
+                <form action="proses/proses_ubah_barang.php" method="post">
+                    <div class="form-group">
+                        <label for="kode">Kode Barang:</label>
+                        <input type="text" class="form-control" id="kode" name="kode" value="<?php echo $row['kode']; ?>" readonly>
+                    </div>
 
-        // Tampilkan form untuk mengubah data
-        echo '<form action="proses_ubah_barang.php" method="post">
-                <input type="hidden" name="kode_barang" value="' . $row['kode'] . '">
+                    <div class="form-group">
+                        <label for="nama">Nama Barang:</label>
+                        <input type="text" class="form-control" id="nama" name="nama" value="<?php echo $row['nama']; ?>" required>
+                    </div>
 
-                <label for="nama">Nama Barang:</label>
-                <input type="text" id="nama" name="nama" value="' . $row['nama'] . '" required>
+                    <div class="form-group">
+                        <label for="jumlah">Jumlah Barang:</label>
+                        <input type="number" class="form-control" id="jumlah" name="jumlah" value="<?php echo $row['jumlah']; ?>" required>
+                    </div>
 
-                <label for="jumlah">Jumlah Barang:</label>
-                <input type="number" id="jumlah" name="jumlah" value="' . $row['jumlah'] . '" required>
+                    <div class="form-group">
+                        <label for="harga">Harga Barang:</label>
+                        <input type="number" class="form-control" id="harga" name="harga" value="<?php echo $row['harga']; ?>" required>
+                    </div>
 
-                <label for="harga">Harga Barang:</label>
-                <input type="number" id="harga" name="harga" value="' . $row['harga'] . '" required>
+                    <div class="form-group">
+                        <label for="tanggal">Tanggal:</label>
+                        <input type="datetime-local" class="form-control" id="tanggal" name="tanggal" value="<?php echo date('Y-m-d\TH:i', strtotime($row['tanggal'])); ?>" required>
+                    </div>
 
-                <button type="submit" class="btn">Simpan Perubahan</button>
-            </form>';
+                    <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
+                    <button type="button" class="btn btn-secondary" onclick="goBack()">Kembali</button>
+                </form>
+            </div>
+        </body>
+        </html>
+        <?php
     } else {
-        echo 'Data barang tidak ditemukan.';
+        echo '<div class="container mt-4">';
+        echo '<p class="alert alert-danger">Data barang tidak ditemukan.</p>';
+        echo '</div>';
     }
 
     $conn->close();
 } else {
-    echo 'Kode barang tidak valid.';
+    echo '<div class="container mt-4">';
+    echo '<p class="alert alert-danger">Kode barang tidak valid.</p>';
+    echo '</div>';
 }
 ?>
+
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>

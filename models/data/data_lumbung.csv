@@ -1,0 +1,343 @@
+﻿Kabupaten_Kota,Produk_Pangan,Produksi_Ton,beras,cabai,bawang_putih,bawang_merah,lengkuas,jahe,kunyit,singkong,kedelai
+Pacitan,Beras,150,1,0,0,0,0,0,0,0,0
+Pacitan,Cabai,50,0,1,0,0,0,0,0,0,0
+Pacitan,Bawang Putih,20,0,0,1,0,0,0,0,0,0
+Pacitan,Bawang Merah,30,0,0,0,1,0,0,0,0,0
+Pacitan,Lengkuas,10,0,0,0,0,1,0,0,0,0
+Pacitan,Jahe,15,0,0,0,0,0,1,0,0,0
+Pacitan,Kunyit,8,0,0,0,0,0,0,1,0,0
+Pacitan,Singkong,100,0,0,0,0,0,0,0,1,0
+Pacitan,Kedelai,80,0,0,0,0,0,0,0,0,1
+Ponorogo,Beras,200,1,0,0,0,0,0,0,0,0
+Ponorogo,Cabai,40,0,1,0,0,0,0,0,0,0
+Ponorogo,Bawang Putih,25,0,0,1,0,0,0,0,0,0
+Ponorogo,Bawang Merah,35,0,0,0,1,0,0,0,0,0
+Ponorogo,Lengkuas,12,0,0,0,0,1,0,0,0,0
+Ponorogo,Jahe,20,0,0,0,0,0,1,0,0,0
+Ponorogo,Kunyit,10,0,0,0,0,0,0,1,0,0
+Ponorogo,Singkong,120,0,0,0,0,0,0,0,1,0
+Ponorogo,Kedelai,90,0,0,0,0,0,0,0,0,1
+Trenggalek,Beras,180,1,0,0,0,0,0,0,0,0
+Trenggalek,Cabai,60,0,1,0,0,0,0,0,0,0
+Trenggalek,Bawang Putih,22,0,0,1,0,0,0,0,0,0
+Trenggalek,Bawang Merah,28,0,0,0,1,0,0,0,0,0
+Trenggalek,Lengkuas,15,0,0,0,0,1,0,0,0,0
+Trenggalek,Jahe,18,0,0,0,0,0,1,0,0,0
+Trenggalek,Kunyit,12,0,0,0,0,0,0,1,0,0
+Trenggalek,Singkong,80,0,0,0,0,0,0,0,1,0
+Trenggalek,Kedelai,100,0,0,0,0,0,0,0,0,1
+Tulungagung,Beras,250,1,0,0,0,0,0,0,0,0
+Tulungagung,Cabai,55,0,1,0,0,0,0,0,0,0
+Tulungagung,Bawang Putih,30,0,0,1,0,0,0,0,0,0
+Tulungagung,Bawang Merah,40,0,0,0,1,0,0,0,0,0
+Tulungagung,Lengkuas,18,0,0,0,0,1,0,0,0,0
+Tulungagung,Jahe,25,0,0,0,0,0,1,0,0,0
+Tulungagung,Kunyit,15,0,0,0,0,0,0,1,0,0
+Tulungagung,Singkong,150,0,0,0,0,0,0,0,1,0
+Tulungagung,Kedelai,120,0,0,0,0,0,0,0,0,1
+Blitar,Beras,180,1,0,0,0,0,0,0,0,0
+Blitar,Cabai,50,0,1,0,0,0,0,0,0,0
+Blitar,Bawang Putih,25,0,0,1,0,0,0,0,0,0
+Blitar,Bawang Merah,35,0,0,0,1,0,0,0,0,0
+Blitar,Lengkuas,15,0,0,0,0,1,0,0,0,0
+Blitar,Jahe,20,0,0,0,0,0,1,0,0,0
+Blitar,Kunyit,10,0,0,0,0,0,0,1,0,0
+Blitar,Singkong,100,0,0,0,0,0,0,0,1,0
+Blitar,Kedelai,80,0,0,0,0,0,0,0,0,1
+Kediri,Beras,300,1,0,0,0,0,0,0,0,0
+Kediri,Cabai,70,0,1,0,0,0,0,0,0,0
+Kediri,Bawang Putih,35,0,0,1,0,0,0,0,0,0
+Kediri,Bawang Merah,45,0,0,0,1,0,0,0,0,0
+Kediri,Lengkuas,20,0,0,0,0,1,0,0,0,0
+Kediri,Jahe,30,0,0,0,0,0,1,0,0,0
+Kediri,Kunyit,18,0,0,0,0,0,0,1,0,0
+Kediri,Singkong,200,0,0,0,0,0,0,0,1,0
+Kediri,Kedelai,150,0,0,0,0,0,0,0,0,1
+Malang,Beras,350,1,0,0,0,0,0,0,0,0
+Malang,Cabai,80,0,1,0,0,0,0,0,0,0
+Malang,Bawang Putih,40,0,0,1,0,0,0,0,0,0
+Malang,Bawang Merah,50,0,0,0,1,0,0,0,0,0
+Malang,Lengkuas,25,0,0,0,0,1,0,0,0,0
+Malang,Jahe,35,0,0,0,0,0,1,0,0,0
+Malang,Kunyit,20,0,0,0,0,0,0,1,0,0
+Malang,Singkong,250,0,0,0,0,0,0,0,1,0
+Malang,Kedelai,180,0,0,0,0,0,0,0,0,1
+Lumajang,Beras,200,1,0,0,0,0,0,0,0,0
+Lumajang,Cabai,45,0,1,0,0,0,0,0,0,0
+Lumajang,Bawang Putih,28,0,0,1,0,0,0,0,0,0
+Lumajang,Bawang Merah,38,0,0,0,1,0,0,0,0,0
+Lumajang,Lengkuas,18,0,0,0,0,1,0,0,0,0
+Lumajang,Jahe,22,0,0,0,0,0,1,0,0,0
+Lumajang,Kunyit,12,0,0,0,0,0,0,1,0,0
+Lumajang,Singkong,120,0,0,0,0,0,0,0,1,0
+Lumajang,Kedelai,100,0,0,0,0,0,0,0,0,1
+Jember,Beras,280,1,0,0,0,0,0,0,0,0
+Jember,Cabai,65,0,1,0,0,0,0,0,0,0
+Jember,Bawang Putih,32,0,0,1,0,0,0,0,0,0
+Jember,Bawang Merah,42,0,0,0,1,0,0,0,0,0
+Jember,Lengkuas,22,0,0,0,0,1,0,0,0,0
+Jember,Jahe,28,0,0,0,0,0,1,0,0,0
+Jember,Kunyit,14,0,0,0,0,0,0,1,0,0
+Jember,Singkong,180,0,0,0,0,0,0,0,1,0
+Jember,Kedelai,130,0,0,0,0,0,0,0,0,1
+Banyuwangi,Beras,320,1,0,0,0,0,0,0,0,0
+Banyuwangi,Cabai,75,0,1,0,0,0,0,0,0,0
+Banyuwangi,Bawang Putih,38,0,0,1,0,0,0,0,0,0
+Banyuwangi,Bawang Merah,48,0,0,0,1,0,0,0,0,0
+Banyuwangi,Lengkuas,28,0,0,0,0,1,0,0,0,0
+Banyuwangi,Jahe,32,0,0,0,0,0,1,0,0,0
+Banyuwangi,Kunyit,16,0,0,0,0,0,0,1,0,0
+Banyuwangi,Singkong,220,0,0,0,0,0,0,0,1,0
+Banyuwangi,Kedelai,160,0,0,0,0,0,0,0,0,1
+Bondowoso,Beras,250,1,0,0,0,0,0,0,0,0
+Bondowoso,Cabai,120,0,1,0,0,0,0,0,0,0
+Bondowoso,Bawang Putih,50,0,0,1,0,0,0,0,0,0
+Bondowoso,Bawang Merah,60,0,0,0,1,0,0,0,0,0
+Bondowoso,Lengkuas,30,0,0,0,0,1,0,0,0,0
+Bondowoso,Jahe,40,0,0,0,0,0,1,0,0,0
+Bondowoso,Kunyit,25,0,0,0,0,0,0,1,0,0
+Bondowoso,Singkong,180,0,0,0,0,0,0,0,1,0
+Bondowoso,Kedelai,200,0,0,0,0,0,0,0,0,1
+Situbondo,Beras,280,1,0,0,0,0,0,0,0,0
+Situbondo,Cabai,100,0,1,0,0,0,0,0,0,0
+Situbondo,Bawang Putih,40,0,0,1,0,0,0,0,0,0
+Situbondo,Bawang Merah,55,0,0,0,1,0,0,0,0,0
+Situbondo,Lengkuas,35,0,0,0,0,1,0,0,0,0
+Situbondo,Jahe,45,0,0,0,0,0,1,0,0,0
+Situbondo,Kunyit,20,0,0,0,0,0,0,1,0,0
+Situbondo,Singkong,150,0,0,0,0,0,0,0,1,0
+Situbondo,Kedelai,220,0,0,0,0,0,0,0,0,1
+Probolinggo,Beras,300,1,0,0,0,0,0,0,0,0
+Probolinggo,Cabai,110,0,1,0,0,0,0,0,0,0
+Probolinggo,Bawang Putih,45,0,0,1,0,0,0,0,0,0
+Probolinggo,Bawang Merah,50,0,0,0,1,0,0,0,0,0
+Probolinggo,Lengkuas,40,0,0,0,0,1,0,0,0,0
+Probolinggo,Jahe,50,0,0,0,0,0,1,0,0,0
+Probolinggo,Kunyit,30,0,0,0,0,0,0,1,0,0
+Probolinggo,Singkong,160,0,0,0,0,0,0,0,1,0
+Probolinggo,Kedelai,240,0,0,0,0,0,0,0,0,1
+Pasuruan,Beras,270,1,0,0,0,0,0,0,0,0
+Pasuruan,Cabai,130,0,1,0,0,0,0,0,0,0
+Pasuruan,Bawang Putih,55,0,0,1,0,0,0,0,0,0
+Pasuruan,Bawang Merah,65,0,0,0,1,0,0,0,0,0
+Pasuruan,Lengkuas,25,0,0,0,0,1,0,0,0,0
+Pasuruan,Jahe,35,0,0,0,0,0,1,0,0,0
+Pasuruan,Kunyit,22,0,0,0,0,0,0,1,0,0
+Pasuruan,Singkong,170,0,0,0,0,0,0,0,1,0
+Pasuruan,Kedelai,210,0,0,0,0,0,0,0,0,1
+Sidoarjo,Beras,320,1,0,0,0,0,0,0,0,0
+Sidoarjo,Cabai,90,0,1,0,0,0,0,0,0,0
+Sidoarjo,Bawang Putih,60,0,0,1,0,0,0,0,0,0
+Sidoarjo,Bawang Merah,70,0,0,0,1,0,0,0,0,0
+Sidoarjo,Lengkuas,20,0,0,0,0,1,0,0,0,0
+Sidoarjo,Jahe,30,0,0,0,0,0,1,0,0,0
+Sidoarjo,Kunyit,28,0,0,0,0,0,0,1,0,0
+Sidoarjo,Singkong,140,0,0,0,0,0,0,0,1,0
+Sidoarjo,Kedelai,180,0,0,0,0,0,0,0,0,1
+Mojokerto,Beras,250,1,0,0,0,0,0,0,0,0
+Mojokerto,Cabai,100,0,1,0,0,0,0,0,0,0
+Mojokerto,Bawang Putih,50,0,0,1,0,0,0,0,0,0
+Mojokerto,Bawang Merah,55,0,0,0,1,0,0,0,0,0
+Mojokerto,Lengkuas,30,0,0,0,0,1,0,0,0,0
+Mojokerto,Jahe,40,0,0,0,0,0,1,0,0,0
+Mojokerto,Kunyit,25,0,0,0,0,0,0,1,0,0
+Mojokerto,Singkong,160,0,0,0,0,0,0,0,1,0
+Mojokerto,Kedelai,200,0,0,0,0,0,0,0,0,1
+Jombang,Beras,280,1,0,0,0,0,0,0,0,0
+Jombang,Cabai,120,0,1,0,0,0,0,0,0,0
+Jombang,Bawang Putih,40,0,0,1,0,0,0,0,0,0
+Jombang,Bawang Merah,60,0,0,0,1,0,0,0,0,0
+Jombang,Lengkuas,35,0,0,0,0,1,0,0,0,0
+Jombang,Jahe,45,0,0,0,0,0,1,0,0,0
+Jombang,Kunyit,20,0,0,0,0,0,0,1,0,0
+Jombang,Singkong,150,0,0,0,0,0,0,0,1,0
+Jombang,Kedelai,220,0,0,0,0,0,0,0,0,1
+Nganjuk,Beras,300,1,0,0,0,0,0,0,0,0
+Nganjuk,Cabai,110,0,1,0,0,0,0,0,0,0
+Nganjuk,Bawang Putih,45,0,0,1,0,0,0,0,0,0
+Nganjuk,Bawang Merah,50,0,0,0,1,0,0,0,0,0
+Nganjuk,Lengkuas,40,0,0,0,0,1,0,0,0,0
+Nganjuk,Jahe,50,0,0,0,0,0,1,0,0,0
+Nganjuk,Kunyit,30,0,0,0,0,0,0,1,0,0
+Nganjuk,Singkong,170,0,0,0,0,0,0,0,1,0
+Nganjuk,Kedelai,210,0,0,0,0,0,0,0,0,1
+Madiun,Beras,270,1,0,0,0,0,0,0,0,0
+Madiun,Cabai,130,0,1,0,0,0,0,0,0,0
+Madiun,Bawang Putih,55,0,0,1,0,0,0,0,0,0
+Madiun,Bawang Merah,65,0,0,0,1,0,0,0,0,0
+Madiun,Lengkuas,25,0,0,0,0,1,0,0,0,0
+Madiun,Jahe,35,0,0,0,0,0,1,0,0,0
+Madiun,Kunyit,22,0,0,0,0,0,0,1,0,0
+Madiun,Singkong,180,0,0,0,0,0,0,0,1,0
+Madiun,Kedelai,240,0,0,0,0,0,0,0,0,1
+Magetan,Beras,320,1,0,0,0,0,0,0,0,0
+Magetan,Cabai,90,0,1,0,0,0,0,0,0,0
+Magetan,Bawang Putih,60,0,0,1,0,0,0,0,0,0
+Magetan,Bawang Merah,70,0,0,0,1,0,0,0,0,0
+Magetan,Lengkuas,20,0,0,0,0,1,0,0,0,0
+Magetan,Jahe,30,0,0,0,0,0,1,0,0,0
+Magetan,Kunyit,28,0,0,0,0,0,0,1,0,0
+Magetan,Singkong,140,0,0,0,0,0,0,0,1,0
+Magetan,Kedelai,160,0,0,0,0,0,0,0,0,1
+Ngawi,Beras,250,1,0,0,0,0,0,0,0,0
+Ngawi,Cabai,120,0,1,0,0,0,0,0,0,0
+Ngawi,Bawang Putih,50,0,0,1,0,0,0,0,0,0
+Ngawi,Bawang Merah,80,0,0,0,1,0,0,0,0,0
+Ngawi,Lengkuas,10,0,0,0,0,1,0,0,0,0
+Ngawi,Jahe,15,0,0,0,0,0,1,0,0,0
+Ngawi,Kunyit,25,0,0,0,0,0,0,1,0,0
+Ngawi,Singkong,180,0,0,0,0,0,0,0,1,0
+Ngawi,Kedelai,90,0,0,0,0,0,0,0,0,1
+Bojonegoro,Beras,300,1,0,0,0,0,0,0,0,0
+Bojonegoro,Cabai,150,0,1,0,0,0,0,0,0,0
+Bojonegoro,Bawang Putih,60,0,0,1,0,0,0,0,0,0
+Bojonegoro,Bawang Merah,100,0,0,0,1,0,0,0,0,0
+Bojonegoro,Lengkuas,12,0,0,0,0,1,0,0,0,0
+Bojonegoro,Jahe,20,0,0,0,0,0,1,0,0,0
+Bojonegoro,Kunyit,30,0,0,0,0,0,0,1,0,0
+Bojonegoro,Singkong,200,0,0,0,0,0,0,0,1,0
+Bojonegoro,Kedelai,110,0,0,0,0,0,0,0,0,1
+Tuban,Beras,280,1,0,0,0,0,0,0,0,0
+Tuban,Cabai,130,0,1,0,0,0,0,0,0,0
+Tuban,Bawang Putih,55,0,0,1,0,0,0,0,0,0
+Tuban,Bawang Merah,90,0,0,0,1,0,0,0,0,0
+Tuban,Lengkuas,11,0,0,0,0,1,0,0,0,0
+Tuban,Jahe,18,0,0,0,0,0,1,0,0,0
+Tuban,Kunyit,28,0,0,0,0,0,0,1,0,0
+Tuban,Singkong,190,0,0,0,0,0,0,0,1,0
+Tuban,Kedelai,100,0,0,0,0,0,0,0,0,1
+Lamongan,Beras,320,1,0,0,0,0,0,0,0,0
+Lamongan,Cabai,140,0,1,0,0,0,0,0,0,0
+Lamongan,Bawang Putih,58,0,0,1,0,0,0,0,0,0
+Lamongan,Bawang Merah,95,0,0,0,1,0,0,0,0,0
+Lamongan,Lengkuas,13,0,0,0,0,1,0,0,0,0
+Lamongan,Jahe,22,0,0,0,0,0,1,0,0,0
+Lamongan,Kunyit,32,0,0,0,0,0,0,1,0,0
+Lamongan,Singkong,210,0,0,0,0,0,0,0,1,0
+Lamongan,Kedelai,120,0,0,0,0,0,0,0,0,1
+Gresik,Beras,280,1,0,0,0,0,0,0,0,0
+Gresik,Cabai,120,0,1,0,0,0,0,0,0,0
+Gresik,Bawang Putih,52,0,0,1,0,0,0,0,0,0
+Gresik,Bawang Merah,85,0,0,0,1,0,0,0,0,0
+Gresik,Lengkuas,9,0,0,0,0,1,0,0,0,0
+Gresik,Jahe,16,0,0,0,0,0,1,0,0,0
+Gresik,Kunyit,26,0,0,0,0,0,0,1,0,0
+Gresik,Singkong,180,0,0,0,0,0,0,0,1,0
+Gresik,Kedelai,95,0,0,0,0,0,0,0,0,1
+Bangkalan,Beras,260,1,0,0,0,0,0,0,0,0
+Bangkalan,Cabai,110,0,1,0,0,0,0,0,0,0
+Bangkalan,Bawang Putih,48,0,0,1,0,0,0,0,0,0
+Bangkalan,Bawang Merah,75,0,0,0,1,0,0,0,0,0
+Bangkalan,Lengkuas,8,0,0,0,0,1,0,0,0,0
+Bangkalan,Jahe,14,0,0,0,0,0,1,0,0,0
+Bangkalan,Kunyit,24,0,0,0,0,0,0,1,0,0
+Bangkalan,Singkong,160,0,0,0,0,0,0,0,1,0
+Bangkalan,Kedelai,85,0,0,0,0,0,0,0,0,1
+Sampang,Beras,240,1,0,0,0,0,0,0,0,0
+Sampang,Cabai,105,0,1,0,0,0,0,0,0,0
+Sampang,Bawang Putih,45,0,0,1,0,0,0,0,0,0
+Sampang,Bawang Merah,70,0,0,0,1,0,0,0,0,0
+Sampang,Lengkuas,7,0,0,0,0,1,0,0,0,0
+Sampang,Jahe,12,0,0,0,0,0,1,0,0,0
+Sampang,Kunyit,22,0,0,0,0,0,0,1,0,0
+Sampang,Singkong,150,0,0,0,0,0,0,0,1,0
+Sampang,Kedelai,80,0,0,0,0,0,0,0,0,1
+Pamekasan,Beras,220,1,0,0,0,0,0,0,0,0
+Pamekasan,Cabai,100,0,1,0,0,0,0,0,0,0
+Pamekasan,Bawang Putih,40,0,0,1,0,0,0,0,0,0
+Pamekasan,Bawang Merah,65,0,0,0,1,0,0,0,0,0
+Pamekasan,Lengkuas,6,0,0,0,0,1,0,0,0,0
+Pamekasan,Jahe,10,0,0,0,0,0,1,0,0,0
+Pamekasan,Kunyit,20,0,0,0,0,0,0,1,0,0
+Pamekasan,Singkong,140,0,0,0,0,0,0,0,1,0
+Pamekasan,Kedelai,75,0,0,0,0,0,0,0,0,1
+Sumenep,Beras,200,1,0,0,0,0,0,0,0,0
+Sumenep,Cabai,95,0,1,0,0,0,0,0,0,0
+Sumenep,Bawang Putih,38,0,0,1,0,0,0,0,0,0
+Sumenep,Bawang Merah,60,0,0,0,1,0,0,0,0,0
+Sumenep,Lengkuas,5,0,0,0,0,1,0,0,0,0
+Sumenep,Jahe,8,0,0,0,0,0,1,0,0,0
+Sumenep,Kunyit,18,0,0,0,0,0,0,1,0,0
+Sumenep,Singkong,130,0,0,0,0,0,0,0,1,0
+Sumenep,Kedelai,70,0,0,0,0,0,0,0,0,1
+Kediri,Beras,300,1,0,0,0,0,0,0,0,0
+Kediri,Cabai,160,0,1,0,0,0,0,0,0,0
+Kediri,Bawang Putih,65,0,0,1,0,0,0,0,0,0
+Kediri,Bawang Merah,110,0,0,0,1,0,0,0,0,0
+Kediri,Lengkuas,15,0,0,0,0,1,0,0,0,0
+Kediri,Jahe,25,0,0,0,0,0,1,0,0,0
+Kediri,Kunyit,35,0,0,0,0,0,0,1,0,0
+Kediri,Singkong,220,0,0,0,0,0,0,0,1,0
+Kediri,Kedelai,130,0,0,0,0,0,0,0,0,1
+Blitar,Beras,150,1,0,0,0,0,0,0,0,0
+Blitar,Cabai,80,0,1,0,0,0,0,0,0,0
+Blitar,Bawang Putih,50,0,0,1,0,0,0,0,0,0
+Blitar,Bawang Merah,60,0,0,0,1,0,0,0,0,0
+Blitar,Lengkuas,20,0,0,0,0,1,0,0,0,0
+Blitar,Jahe,30,0,0,0,0,0,1,0,0,0
+Blitar,Kunyit,25,0,0,0,0,0,0,1,0,0
+Blitar,Singkong,200,0,0,0,0,0,0,0,1,0
+Blitar,Kedelai,100,0,0,0,0,0,0,0,0,1
+Malang,Beras,200,1,0,0,0,0,0,0,0,0
+Malang,Cabai,120,0,1,0,0,0,0,0,0,0
+Malang,Bawang Putih,70,0,0,1,0,0,0,0,0,0
+Malang,Bawang Merah,80,0,0,0,1,0,0,0,0,0
+Malang,Lengkuas,30,0,0,0,0,1,0,0,0,0
+Malang,Jahe,40,0,0,0,0,0,1,0,0,0
+Malang,Kunyit,35,0,0,0,0,0,0,1,0,0
+Malang,Singkong,250,0,0,0,0,0,0,0,1,0
+Malang,Kedelai,150,0,0,0,0,0,0,0,0,1
+Probolinggo,Beras,180,1,0,0,0,0,0,0,0,0
+Probolinggo,Cabai,90,0,1,0,0,0,0,0,0,0
+Probolinggo,Bawang Putih,60,0,0,1,0,0,0,0,0,0
+Probolinggo,Bawang Merah,70,0,0,0,1,0,0,0,0,0
+Probolinggo,Lengkuas,25,0,0,0,0,1,0,0,0,0
+Probolinggo,Jahe,35,0,0,0,0,0,1,0,0,0
+Probolinggo,Kunyit,30,0,0,0,0,0,0,1,0,0
+Probolinggo,Singkong,220,0,0,0,0,0,0,0,1,0
+Probolinggo,Kedelai,120,0,0,0,0,0,0,0,0,1
+Pasuruan,Beras,160,1,0,0,0,0,0,0,0,0
+Pasuruan,Cabai,100,0,1,0,0,0,0,0,0,0
+Pasuruan,Bawang Putih,55,0,0,1,0,0,0,0,0,0
+Pasuruan,Bawang Merah,65,0,0,0,1,0,0,0,0,0
+Pasuruan,Lengkuas,22,0,0,0,0,1,0,0,0,0
+Pasuruan,Jahe,32,0,0,0,0,0,1,0,0,0
+Pasuruan,Kunyit,28,0,0,0,0,0,0,1,0,0
+Pasuruan,Singkong,180,0,0,0,0,0,0,0,1,0
+Pasuruan,Kedelai,110,0,0,0,0,0,0,0,0,1
+Mojokerto,Beras,190,1,0,0,0,0,0,0,0,0
+Mojokerto,Cabai,110,0,1,0,0,0,0,0,0,0
+Mojokerto,Bawang Putih,65,0,0,1,0,0,0,0,0,0
+Mojokerto,Bawang Merah,75,0,0,0,1,0,0,0,0,0
+Mojokerto,Lengkuas,28,0,0,0,0,1,0,0,0,0
+Mojokerto,Jahe,38,0,0,0,0,0,1,0,0,0
+Mojokerto,Kunyit,33,0,0,0,0,0,0,1,0,0
+Mojokerto,Singkong,230,0,0,0,0,0,0,0,1,0
+Mojokerto,Kedelai,130,0,0,0,0,0,0,0,0,1
+Madiun,Beras,170,1,0,0,0,0,0,0,0,0
+Madiun,Cabai,80,0,1,0,0,0,0,0,0,0
+Madiun,Bawang Putih,55,0,0,1,0,0,0,0,0,0
+Madiun,Bawang Merah,65,0,0,0,1,0,0,0,0,0
+Madiun,Lengkuas,20,0,0,0,0,1,0,0,0,0
+Madiun,Jahe,30,0,0,0,0,0,1,0,0,0
+Madiun,Kunyit,25,0,0,0,0,0,0,1,0,0
+Madiun,Singkong,200,0,0,0,0,0,0,0,1,0
+Madiun,Kedelai,100,0,0,0,0,0,0,0,0,1
+Surabaya,Beras,250,1,0,0,0,0,0,0,0,0
+Surabaya,Cabai,150,0,1,0,0,0,0,0,0,0
+Surabaya,Bawang Putih,80,0,0,1,0,0,0,0,0,0
+Surabaya,Bawang Merah,90,0,0,0,1,0,0,0,0,0
+Surabaya,Lengkuas,35,0,0,0,0,1,0,0,0,0
+Surabaya,Jahe,45,0,0,0,0,0,1,0,0,0
+Surabaya,Kunyit,40,0,0,0,0,0,0,1,0,0
+Surabaya,Singkong,280,0,0,0,0,0,0,0,1,0
+Surabaya,Kedelai,180,0,0,0,0,0,0,0,0,1
+Batu,Beras,220,1,0,0,0,0,0,0,0,0
+Batu,Cabai,130,0,1,0,0,0,0,0,0,0
+Batu,Bawang Putih,70,0,0,1,0,0,0,0,0,0
+Batu,Bawang Merah,80,0,0,0,1,0,0,0,0,0
+Batu,Lengkuas,32,0,0,0,0,1,0,0,0,0
+Batu,Jahe,42,0,0,0,0,0,1,0,0,0
+Batu,Kunyit,37,0,0,0,0,0,0,1,0,0
+Batu,Singkong,260,0,0,0,0,0,0,0,1,0
+Batu,Kedelai,160,0,0,0,0,0,0,0,0,1

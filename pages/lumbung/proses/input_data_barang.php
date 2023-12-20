@@ -1,8 +1,8 @@
 <?php
-session_start();
-
 // Sisipkan file koneksi.php
-require_once('../../../connection/koneksi.php');
+require_once('../../../connection/kon.php');
+
+session_start();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Ambil data dari formulir
@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $tanggal = $_POST['tanggal'];
 
     // Koneksi ke database
-    $conn = connectDB();
+    $conn = connectDB(); // Assuming connectDB() is defined in koneksi.php
 
     // Query untuk memasukkan data barang ke database
     $query = "INSERT INTO data_barang (kode, nama, jumlah, harga, tanggal) VALUES ('$kode', '$nama', '$jumlah', '$harga', '$tanggal')";
