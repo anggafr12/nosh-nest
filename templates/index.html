@@ -11,51 +11,54 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
     <title> NOSH NEST | Welcome </title>
   </head>
   <body>
     <div id="subfile-container"></div>
-    <script>
+    <!-- <script>
 
       // Menggunakan JavaScript untuk memuat konten dari subfile.html
-      fetch("header.html")
+      fetch("../header.html")
           .then(response => response.text())
           .then(html => {
               document.getElementById('subfile-container').innerHTML = html;
           });
-    </script>
-     <!-- <header class="header">
-      <nav>
-        <div class="nav__logo"><a href="#">Nosh Nest</a></div>
-        <ul class="nav__links" id="nav-links">
-          <li class="link"><a href="#home">Beranda</a></li>
-          <li class="link"><a href="#choose">Tentang Kami</a></li>
-          <button type="button" class="btn btn-primary">Masuk</button>
-        </ul>
-        <div class="nav__menu__btn" id="menu-btn">
-          <span><i class="ri-menu-line"></i></span>
+    </script> -->
+    <link rel="stylesheet" href="/static/styles.css" />
+    <header class="header">
+        <nav>
+          <div class="nav__logo"><a href="#">Nosh Nest</a></div>
+          <ul class="nav__links" id="nav-links">
+            <li class="link"><a href="#home">Beranda</a></li>
+            <li class="link"><a href="#choose">Tentang Kami</a></li>
+            <a href='/masuk'>
+            <button action='' type="button" class="btn btn-primary">Masuk</button>
+            </a>
+          </ul>
+          <div class="nav__menu__btn" id="menu-btn">
+            <span><i class="ri-menu-line"></i></span>
+          </div>
+          <div class="nav__actions">
+            <span><i class="ri-search-fill"></i></span>
+            <span><i class="ri-user-fill"></i></span>
+          </div>
+        </nav>
+        <div class="section__container header__container" id="home">
+          <h1>NoshNest: Menyambungkan Desa, Melayani Kebutuhan Pangan. </h1>
+          <p>
+            Amanah Pangan untuk Desa Sejahtera! Satukan Langkah, Sediakan Ketersediaan Makanan untuk Semua.
+          </p>
+          <form action="/">
+            <input type="text" placeholder="Cari Lumbung Pangan" />
+            <button><i class="ri-search-line"></i></button>
+          </form>
+          <a href="#choose"><i class="ri-arrow-down-double-line"></i></a>
         </div>
-        <div class="nav__actions">
-          <span><i class="ri-search-fill"></i></span>
-          <span><i class="ri-user-fill"></i></span>
-        </div>
-      </nav>
-      <div class="section__container header__container" id="home">
-        <h1>NoshNest: Menyambungkan Desa, Melayani Kebutuhan Pangan. </h1>
-        <p>
-          Amanah Pangan untuk Desa Sejahtera! Satukan Langkah, Sediakan Ketersediaan Makanan untuk Semua.
-        </p>
-        <form action="/">
-          <input type="text" placeholder="Cari Lumbung Pangan" />
-          <button><i class="ri-search-line"></i></button>
-        </form>
-        <a href="#choose"><i class="ri-arrow-down-double-line"></i></a>
-      </div>
-    </header> -->
+      </header>
 
     <section class="section__container choose__container" id="choose">
-      <img class="choose__bg" src="assets/dot-bg.png" alt="bg" />
+      <img class="choose__bg" src="/static/assets/dot-bg.png" alt="bg" />
       <div class="choose__content">
         <h2 class="section__header">Kenapa Kami Ada</h2>
         <p class="section__subheader">
@@ -95,15 +98,15 @@
         </div>
       </div>
       <div class="choose__image">
-        <img src="assets/food-estate.jpg" alt="choose" />
+        <img src="/static/assets/food-estate.jpg" alt="choose" />
       </div>
     </section>
 
     <section class="offer__container" id="offer">
       <div class="offer__grid__top">
-          <img src="assets/pict_1.jpg" alt="offer" />
-          <img src="assets/pict_2.jpg" alt="offer" />
-          <img src="assets/pict_3.jpeg" alt="offer" />
+          <img src="/static/assets/pict_1.jpg" alt="offer" />
+          <img src="/static/assets/pict_2.jpg" alt="offer" />
+          <img src="/static/assets/pict_3.jpeg" alt="offer" />
         <div class="offer__content">
           <h2 class="section__header">Program Kami</h2>
           <p class="section__subheader">
@@ -113,10 +116,10 @@
         </div>
       </div>
       <div class="offer__grid__bottom">
-        <img src="assets/pict_4.jpeg" alt="offer" />
-        <img src="assets/pict_5.jpg" alt="offer" />
-        <img src="assets/pict_6.jpeg" alt="offer" />
-        <img src="assets/pict_7.jpg" alt="offer" />
+        <img src="/static/assets/pict_4.jpeg" alt="offer" />
+        <img src="/static/assets/pict_5.jpg" alt="offer" />
+        <img src="/static/assets/pict_6.jpeg" alt="offer" />
+        <img src="/static/assets/pict_7.jpg" alt="offer" />
       </div>
     </section>
 
@@ -124,10 +127,10 @@
 
     <section class="section__container modern__container" id="modern">
       <div class="modern__image">
-        <img src="assets/dot-bg.png" alt="bg" class="modern__bg" />
-        <img src="assets/banner_2.jpg" alt="modern" class="modern__img-1" />
-        <img src="assets/banner_3.jpg" alt="modern" class="modern__img-2" />
-        <img src="assets/banner_1.jpg" alt="modern" class="modern__img-3" />
+        <img src="/static/assets/dot-bg.png" alt="bg" class="modern__bg" />
+        <img src="/static/assets/banner_2.jpg" alt="modern" class="modern__img-1" />
+        <img src="/static/assets/banner_3.jpg" alt="modern" class="modern__img-2" />
+        <img src="/static/assets/banner_1.jpg" alt="modern" class="modern__img-3" />
       </div>
       <div class="modern__content">
         <h2 class="section__header">
@@ -181,7 +184,7 @@
                 antara permintaan dan pasokan pangan. Tujuan utama NoshNest adalah memberdayakan
                 komunitas desa melalui pendekatan teknologi yang memastikan distribusi pangan yang adil, merata, dan berkelanjutan.
               </p>
-              <img src="assets/angga.jpg" alt="testimonial" />
+              <img src="/static/assets/angga.jpg" alt="testimonial" />
               <h4>Dwi Angga Ferdianto</h4>
               <h5>C182BSY3822</h5>
             </div>
@@ -194,7 +197,7 @@
                 antara permintaan dan pasokan pangan. Tujuan utama NoshNest adalah memberdayakan
                 komunitas desa melalui pendekatan teknologi yang memastikan distribusi pangan yang adil, merata, dan berkelanjutan.
               </p>
-              <img src="assets/valdo.jpeg" alt="testimonial" />
+              <img src="/static/assets/valdo.jpeg" alt="testimonial" />
               <h4>Rivaldo Josua Jetrin Rolos</h4>
               <h5>M699BSY1736</h5>
             </div>
@@ -207,7 +210,7 @@
                 antara permintaan dan pasokan pangan. Tujuan utama NoshNest adalah memberdayakan
                 komunitas desa melalui pendekatan teknologi yang memastikan distribusi pangan yang adil, merata, dan berkelanjutan.
               </p>
-              <img src="assets/salim.jpeg" alt="testimonial" />
+              <img src="/static/assets/salim.jpeg" alt="testimonial" />
               <h4>Mochammad Salim</h4>
               <h5>C697BSY3498</h5>
             </div>
@@ -223,14 +226,14 @@
       <div class="blog__grid">
         <div class="blog__card">
           <a href="https://nasional.sindonews.com/read/832995/15/food-estate-diyakini-mampu-dukung-indonesia-jadi-lumbung-pangan-dunia-1658401665">
-            <img src="assets/indonesia-lumbung-dunia.jpg" alt="blog" />
+            <img src="/static/assets/indonesia-lumbung-dunia.jpg" alt="blog" />
             <h4>Food Estate Diyakini Mampu Dukung Indonesia Jadi Lumbung Pangan Dunia</h4>
             <p><span>by</span> Rico Afrido Simanjuntak <span>on</span> 21 Juli, 2022</p>
           </a>
         </div>
         <div class="blog__card">
           <a href="https://agroindonesia.co.id/wujudkan-lumbung-pangan-dunia-kementan-manfaatkan-lahan-rawa/">
-            <img src="assets/mentan-optimalisasi-lahan.jpg" alt="blog" />
+            <img src="/static/assets/mentan-optimalisasi-lahan.jpg" alt="blog" />
             <h4>Wujudkan Lumbung Pangan Dunia, Kementan Manfaatkan Lahan Rawa</h4>
             <p>
               <span>by</span> redaksi <span>on</span> 5 Desember 2023
@@ -239,7 +242,7 @@
         </div>
         <div class="blog__card">
           <a href="https://ekonomi.republika.co.id/berita/s3hz4k502/mentan-sebut-indonesia-harus-bersiap-jadi-lumbung-pangan-dunia">
-            <img src="assets/menhan.jpg" alt="blog" />
+            <img src="/static/assets/menhan.jpg" alt="blog" />
             <h4>Mentan Sebut Indonesia Harus Bersiap Jadi Lumbung Pangan Dunia</h4>
             <p><span>by</span> Lida Puspaningtyas <span>on</span> 2 November, 2023</p>
           </a>
@@ -277,6 +280,6 @@
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="main.js"></script>
+    <script src="/static/main.js"></script>
   </body>
 </html>

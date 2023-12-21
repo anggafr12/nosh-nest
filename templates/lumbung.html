@@ -1,40 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php
-// Mulai sesi
-session_start();
-
-// Fungsi koneksi ke database
-include '../../connection/kon.php';
-
-// Cek apakah pengguna sudah login
-if (!isset($_SESSION['username'])) {
-    // Jika tidak, arahkan ke halaman login atau lakukan tindakan lain sesuai kebutuhan Anda
-    header("Location: ../../index.html");
-    exit();
-}
-
-// Fungsi logout
-if (isset($_GET['logout'])) {
-    // Hapus semua data sesi
-    session_unset();
-    
-    // Hancurkan sesi
-    session_destroy();
-
-    // Redirect ke halaman login atau halaman lainnya
-    header("Location: ../../index.html");
-    exit();
-}
-?>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NOSH NEST | ADMIN LUMBUNG</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="/static/styles.css" />
 </head>
 <body>
     <!-- Header Section -->
@@ -71,7 +43,7 @@ if (isset($_GET['logout'])) {
 
     <!-- Modern Section -->
     <section class="section__container" id="modern">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/static/style_tbl.css" />
         <h2 class="section__header">
             DATA BARANG LUMBUNG PANGAN
         </h2>
@@ -88,54 +60,76 @@ if (isset($_GET['logout'])) {
                 <th>Tanggal</th>
                 <th>Aksi</th>
             </tr>
-            <?php 
-            include '../../connection/koneksi.php';
-            $no = 1;
-            $data = mysqli_query($koneksi,"select * from data_barang order by kode");
-            while($d = mysqli_fetch_array($data)){
-                ?>
-                <tr>
-                    <td><?php echo $no++; ?></td>
-                    <td><?php echo $d['kode']; ?></td>
-                    <td><?php echo $d['nama']; ?></td>
-                    <td><?php echo $d['jumlah']; ?></td>
-                    <td><?php echo $d['harga']; ?></td>
-                    <td><?php echo $d['tanggal']; ?></td>
-                    <td>
-                    <!-- Tambah tombol Edit dan Hapus -->
-                        <button onclick="editBarang('<?php echo $d['kode']; ?>')">Edit</button>
-                        <button onclick="hapusBarang('<?php echo $d['kode']; ?>')">Hapus</button>
-                    </td>
-                </tr>
-                <?php 
-            }
-            ?>
         </table>
         </div>
         <br>
         <!-- Button Section -->
         <button class="btn" onclick="inputBarang()">INPUT BARANG</button>
-        <button class="btn" onclick="ubahBarang()">UBAH BARANG</button>
     </section>
 
     <!-- JavaScript Section -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('/api/barang')
+                .then(response => response.json())
+                .then(data => displayBarang(data))
+                .catch(error => console.error('Error fetching data:', error));
+        });
+    
+        function displayBarang(data) {
+            const table = document.querySelector('.table');
+            const tbody = table.querySelector('tbody');
+
+            data.forEach((barang, index) => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${index + 1}</td>
+                    <td>${barang.kode}</td>
+                    <td>${barang.nama}</td>
+                    <td>${barang.jumlah}</td>
+                    <td>${barang.harga}</td>
+                    <td>${barang.tanggal}</td>
+                    <td>
+                        <button onclick="editBarang('${barang.kode}')">
+                            <i class="bi bi-pencil"></i> Edit
+                        </button>
+                        <button onclick="hapusBarang('${barang.kode}')">
+                            <i class="bi bi-trash"></i> Hapus
+                        </button>
+                    </td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+    </script>
+
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="../../main.js"></script>
+    <script src="/static/main.js"></script>
 
     <!-- JavaScript Functions -->
     <script>
         function logout() {
-        // Konfirmasi logout
-        if (confirm("Apakah Anda yakin ingin keluar?")) {
-            // Redirect ke halaman logout dengan menyertakan parameter logout
-            window.location.href = 'index_lumbung.php?logout=1';
-        }
+            // Konfirmasi logout
+            if (confirm("Apakah Anda yakin ingin keluar?")) {
+                // Make an AJAX request to the Flask server for logout
+                fetch('/logout')
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.status === 'success') {
+                            // Redirect to the login page or any other page after successful logout
+                            window.location.href = '/';
+                        } else {
+                            alert(`Error during logout: ${data.message}`);
+                        }
+                    })
+                    .catch(error => console.error('Error during logout:', error));
+            }
         }
 
         function inputBarang() {
             // Mengarahkan pengguna ke halaman input_barang.php
-            window.location.href = 'input_barang.php';
+            window.location.href = 'input_barang.html';
         }
 
         function ubahBarang() {
@@ -144,16 +138,31 @@ if (isset($_GET['logout'])) {
         }
 
         function editBarang(kode) {
-            // Mengarahkan pengguna ke halaman edit_barang.php dengan menyertakan parameter kode
-            window.location.href = 'ubah_barang.php?kode=' + kode;
+            // Make an AJAX request to the Flask server
+            fetch(`/edit_barang/${kode}`)
+                .then(response => response.text())
+                .then(data => {
+                    // Update the current HTML content with the response
+                    document.body.innerHTML = data;
+                })
+                .catch(error => console.error('Error fetching data:', error));
         }
 
         function hapusBarang(kode) {
-            // Konfirmasi hapus, jika disetujui, mengarahkan pengguna ke halaman hapus_barang.php dengan menyertakan parameter kode
             if (confirm("Apakah Anda yakin ingin menghapus data ini?")) {
-                window.location.href = 'hapus_barang.php?kode=' + kode;
+                fetch(`/hapus_barang/${kode}`, { method: 'POST' })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.status === 'success') {
+                            location.reload();
+                        } else {
+                            alert(`Error deleting data: ${data.message}`);
+                        }
+                    })
+                    .catch(error => console.error('Error fetching data:', error));
             }
         }
+
     </script>
 </body>
 </html>
