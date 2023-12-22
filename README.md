@@ -4,62 +4,63 @@
 ---
 ### Domain Project
 
-> **Tema yang kami pilih dalam capstone project adalah Food Accessibility, Agribusiness, and Food Security, Sustainable Living, Digital Government Transformation dengan judul project “NOSHNEST : Network of Sustainable Harvesting”
+> **The themes we chose in this capstone project are Food Accessibility, Agribusiness, and Food Security, Sustainable Living, Digital Government Transformation with the project title "NOSHNEST: Sustainable Harvesting Network”
 **.
 
-### Latar belakang
+### Backgrounder
 
-Dunia saat ini dihadapkan pada kompleksitas krisis pangan yang merentang secara global. Salah satu pendorong utama ketidakstabilan ini adalah kenaikan harga pangan, yang terkait dengan sejumlah faktor multifaset. Fluktuasi harga pangan di tingkat global dipicu oleh kondisi cuaca ekstrem yang merugikan produksi pertanian, peningkatan permintaan pangan dari populasi dunia yang terus tumbuh, ketidakstabilan dalam nilai tukar mata uang, dan perubahan dalam kebijakan perdagangan internasional.
-Dalam konteks ini, perubahan iklim menjadi aspek yang semakin memperumit ketahanan pangan. Bencana alam seperti banjir, kekeringan, dan badai, yang semuanya terkait erat dengan perubahan iklim, dapat merusak hasil panen dan menurunkan produksi pangan secara signifikan. Fenomena ini menggambarkan interkoneksi antara perubahan iklim dan kerentanan sistem pangan global.
+The world is currently faced with the complexity of a globally spanning food crisis. One of the main drivers of this instability is rising food prices, which are linked to a number of multifaceted factors. Food price fluctuations at the global level are triggered by extreme weather conditions that are detrimental to agricultural production, increased food demand from a growing world population, instability in currency exchange rates, and changes in international trade policies.
+In this context, climate change is an aspect that further complicates food security. Natural disasters such as floods, droughts and storms, all of which are closely linked to climate change, can damage crop yields and significantly reduce food production. This phenomenon illustrates the interconnection between climate change and the vulnerability of the global food system.
 
-Selain itu, ketergantungan pada jenis pangan tertentu di beberapa negara meningkatkan risiko krisis pangan. Jika produksi satu jenis pangan mengalami kegagalan, hal ini dapat memiliki dampak yang signifikan pada ketahanan pangan nasional dan regional. Ini memunculkan kebutuhan mendesak untuk diversifikasi sumber pangan dan mendorong ketahanan pangan yang lebih tangguh dan berkelanjutan.
-Dengan dinamika yang semakin kompleks dan terkait secara global ini, mendukung ketahanan pangan menjadi suatu keharusan mendesak. Upaya kolaboratif dan solusi yang holistik diperlukan untuk mengatasi tantangan ini dan membangun sistem pangan yang mampu bertahan dan memberdayakan masyarakat di seluruh dunia.
+In addition, dependence on certain types of food in some countries increases the risk of food crises. If the production of one type of food fails, this can have a significant impact on national and regional food security. This raises the urgent need to diversify food sources and promote more resilient and sustainable food security.
+With these increasingly complex and globally linked dynamics, supporting food security is an urgent imperative. Collaborative efforts and holistic solutions are needed to address these challenges and build food systems that are resilient and empower people around the world.
 
-Krisis pangan global tidak hanya dipicu oleh faktor produksi dan ketahanan pangan, tetapi juga terkait erat dengan masalah distribusi bahan pangan yang kurang efisien. Infrastruktur logistik yang terbatas, terutama di daerah pedesaan negara-negara berkembang, menjadi hambatan utama dalam mengantarkan bahan pangan ke konsumen akhir. Rantai pasokan global yang panjang menambah risiko gangguan dan keterlambatan distribusi, terutama dalam kondisi cuaca ekstrem atau krisis global. Ketidakseimbangan distribusi antar wilayah juga menciptakan ketidaksetaraan akses terhadap bahan pangan, di mana beberapa daerah mungkin mengalami kelangkaan sementara yang lain mungkin menghadapi surplus. Pemborosan dan kerugian pangan selama distribusi menjadi masalah serius, yang bisa terjadi karena manajemen logistik yang tidak memadai, penyimpanan yang buruk, atau proses distribusi yang kurang efisien. Selain itu, situasi krisis atau konflik dapat memperparah ketidakpastian distribusi, membatasi akses ke wilayah yang terkena dampak. Oleh karena itu, upaya untuk meningkatkan efisiensi distribusi pangan melalui teknologi, inovasi, dan perbaikan infrastruktur menjadi krusial dalam mengatasi krisis pangan global.
+The global food crisis is not only triggered by production and food security factors, but is also closely related to the problem of inefficient food distribution. Limited logistics infrastructure, especially in rural areas of developing countries, is a major obstacle in delivering food to end consumers. Long global supply chains increase the risk of disruptions and delays in distribution, especially in extreme weather conditions or global crises. Distribution imbalances between regions also create unequal access to food, where some regions may experience shortages while others may face surpluses. Food wastage and losses during distribution are a serious problem, which can occur due to inadequate logistics management, poor storage or inefficient distribution processes. In addition, crisis or conflict situations can exacerbate distribution uncertainties, limiting access to affected areas. Therefore, efforts to improve food distribution efficiency through technology, innovation and infrastructure improvements are crucial in addressing the global food crisis.
 
-Di Indonesia, masalah distribusi bahan pangan yang kurang efisien menjadi salah satu faktor yang memperumit tantangan krisis pangan. Meskipun negara ini memiliki potensi pertanian yang besar, infrastruktur logistik yang terbatas di sejumlah wilayah, terutama di daerah pedesaan, sering kali menjadi penghambat utama. Transportasi yang sulit diakses dan jalur distribusi yang tidak optimal dapat menyulitkan pengiriman bahan pangan dari produsen ke konsumen akhir. Selain itu, ketidakseimbangan distribusi antarwilayah di Indonesia menciptakan disparitas akses terhadap bahan pangan. Sementara beberapa daerah mungkin menghadapi kelangkaan dan kesulitan mendapatkan pasokan, daerah lain mungkin memiliki surplus yang tidak merata. Hal ini tidak hanya berdampak pada ketersediaan pangan secara keseluruhan, tetapi juga menyebabkan fluktuasi harga yang tidak merata di berbagai daerah. Untuk mengatasi permasalahan ini, diperlukan upaya serius dalam meningkatkan infrastruktur logistik, memanfaatkan teknologi untuk manajemen rantai pasokan, dan menciptakan kebijakan distribusi yang lebih efektif. Peningkatan keterlibatan pihak swasta, penerapan teknologi informasi, dan inovasi dalam manajemen distribusi dapat membantu mengoptimalkan aliran bahan pangan di Indonesia, sehingga mencapai tujuan ketahanan pangan yang lebih kokoh. Dengan bekerjasama dengan pemerintah daerah setempat dan teknologi yang ada sekarang, maka masalah terkait disribusi bahan pangan dapat dikendalikan
+In Indonesia, the problem of inefficient food distribution is one of the factors that complicate the challenges of the food crisis. Despite the country's vast agricultural potential, limited logistics infrastructure in some regions, especially in rural areas, is often a major obstacle. Inaccessible transportation and suboptimal distribution channels can make it difficult to deliver food from producers to end consumers. In addition, distribution imbalances between regions in Indonesia create disparities in access to food. While some regions may face scarcity and difficulty getting supplies, other regions may have uneven surpluses. This not only impacts overall food availability, but also leads to uneven price fluctuations in different regions. To address these issues, serious efforts are needed to improve logistics infrastructure, utilize technology for supply chain management, and create more effective distribution policies. Increased involvement of the private sector, the application of information technology, and innovation in distribution management can help optimize food flows in Indonesia, thereby achieving the goal of more robust food security. By working together with local governments and current technology, problems related to food distribution can be controlled.
+
 
 # Business Understanding
 ---
 #### Problem Statements
-berdasarkan latar belakang diatas, berikut ini rumusan masalah yang dapat diselesaikan pada proyek ini:
+Based on the above background, the following problems can be solved in this project:
 
-- Bagaimana cara melakukan pemrosesan data agar dapat digunakan dalam membuat model demographic filtering yang sesuai dengan kebutuhuan model?
-- Bagaimana memberikan rekomendasi lumbung pangan yang sesuai dengan kebutuhan warga setempat?
+- How to process data so that it can be used in creating a demographic filtering model that suits the needs of the model?
+- How to provide recommendations for food barns that suit the needs of local residents?
 
 #### Goals
-- Melakukan pemrosesan dengan baik agar dapat digunakan dalam pembuatan model.
-- Membuat sistem rekomendasi yang sesuai dengan kebutuhan user.
+- Perform processing properly so that it can be used in modeling.
+- Create a recommendation system that suits user needs.
 
 #### Solution Statements
-Solusi yang dapat dilakukan untuk memenuhi tujuan dari proyek ini diantaranya :
-* Untuk pemrosesan data dapat dilakukan beberapa teknik, diantaranya :
-    * mengecek kembali apakah ada data yang kosong 
-    * Menghitung jumlah data yang ada pada dataset
-* Metode yang digunakan pada projek ini adalah Demographif Filtering. Demographic Filtering adalah metode penyaringan atau filtrasi yang memanfaatkan informasi atau karakteristik pengguna untuk memberikan rekomendasi atau menyaring konten yang lebih sesuai. Dalam hal ini metode ini memanfatkan informasi mengenai jenis bahan pangan yang dibutuhkan/ tersedia dan informasi mengenai jumlah data bahan pangan yang dibutuhkan/ tersedia.
-  * Kelebihan
-        * Penargetan yang efektif
-        Dengan memahami karakteristik demografis pengguna, platform atau bisnis dapat melakukan penargetan yang lebih efektif dalam kampanye pemasaran atau promosi produk.
-  * Kekurangan
-        * Keterbatasan dalam Menangkap Keunikan Individu
-       Metode ini cenderung kurang mampu menangkap keunikan individu dan perubahan preferensi seiring waktu. Dua orang dengan karakteristik demografis yang sama mungkin memiliki preferensi yang berbeda.
+Solutions that can be done to meet the objectives of this project include:
+* For data processing, several techniques can be used, including:
+    * checking whether there is empty data 
+    * Counting the amount of data in the dataset.
+* The method used in this project is Demographic Filtering. Demographic Filtering is a filtering method that utilizes information or user characteristics to provide recommendations or filter more appropriate content. In this case, this method utilizes information about the type of food needed/available and information about the amount of food data needed/available.
+  * Advantages
+        * Effective targeting
+        By understanding the demographic characteristics of users, platforms or businesses can conduct more effective targeting in marketing campaigns or product promotions.
+  * Disadvantages
+        * Limitations in Capturing Individual Uniqueness
+       This method tends to lack the ability to capture individual uniqueness and changes in preferences over time. Two people with the same demographic characteristics may have different preferences.
 
 # Data Understanding
-Pada project ini kami menggunakan data dummy, Karna sulitnya menemukan data kebutuhan pangan yang ada di wilayah Indonesia. Dataset yang kami gunakan bernama data_mubung.csv berisi 12 kolom dan 342 baris. Adapun penjelasan mengenai variabel-variabel pada dataset noshnest recomendation ini sebagai berikut :
-- **Kabupaten_Kota**. Parameter ini digunakan sebagai informasi lokasi lumbung pangan.
-- **Produksi_Pangan**. Parameter ini digunakan untuk merepresentasikan jenis bahan pangan.
-- **Produksi_Ton** Parameter ini digunakan untuk merepresentasikan jumlah dari suatu jenis bahan pangan.
-- **beras** Parameter ini berfungsi sebagai penanda bahwa kolom tersebut berjenis bahan pangan beras.
-- **cabai** Parameter ini berfungsi sebagai penanda bahwa kolom tersebut berjenis bahan pangan cabai.
-- **bawang_putih** Parameter ini berfungsi sebagai penanda bahwa kolom tersebut berjenis bahan pangan bawang putih.
-- **bawang_merah** Parameter ini berfungsi sebagai penanda bahwa kolom tersebut berjenis bahan pangan bawang merah.
-- **lengkuas** Parameter ini berfungsi sebagai penanda bahwa kolom tersebut berjenis bahan pangan lengkuas.
-- **jahe** Parameter ini berfungsi sebagai penanda bahwa kolom tersebut berjenis bahan pangan jahe.
-- **kunyit** Parameter ini berfungsi sebagai penanda bahwa kolom tersebut berjenis bahan pangan kunyit.
-- **singkong** Parameter ini berfungsi sebagai penanda bahwa kolom tersebut berjenis bahan pangan singkong.
-- **kedelai** Parameter ini berfungsi sebagai penanda bahwa kolom tersebut berjenis bahan pangan kedelai.
+In this project we use dummy data, because it is difficult to find data on food needs in the Indonesian region. The dataset we use called data_lumbung.csv contains 12 columns and 342 rows. The explanation of the variables in this noshnest recommendation dataset is as follows:
+- **Kabupaten_Kota**. This parameter is used as information on the location of food barns.
+- **Produksi_Pangan**. This parameter is used to represent the type of food.
+- **Produksi_Ton** This parameter is used to represent the amount of a food item.
+- **beras** This parameter serves as a marker that the column is of the food type 'rice'.
+- **cabai** This parameter serves as a marker that the column is of the food type 'chili'.
+- **bawang_putih** This parameter serves as a marker that the column is of the food type 'garlic'.
+- **bawang_merah** This parameter serves as a marker that the column is of the food type 'onion'.
+- **lengkuas** This parameter serves as a marker that the column is of the food type 'galangal'.
+- **jahe** This parameter serves as a marker that the column is of the food type 'ginger'.
+- **kunyit** This parameter serves as a marker that the column is of the food type 'turmeric'.
+- **singkong** This parameter serves as a marker that the column is of the food type 'cassava'.
+- **kedelai** This parameter serves as a marker that the column is of the food type 'soy'.
 
-kita akan gunakan ``` dataset.info()``` untuk mengecek tipe kolom pada dataset
+we will use ```dataset.info()``` to check the column type in the dataset
 
 ![Dataset_info()](models/dataset.info().png)
 
@@ -67,35 +68,34 @@ kita akan gunakan ``` dataset.info()``` untuk mengecek tipe kolom pada dataset
 ---
 
 ![model1](models/model1.png)
-* Kelas NoshNest memiliki konstruktor (__init__) yang akan membaca file CSV dengan menggunakan Pandas dan menyimpannya sebagai atribut df (DataFrame) dari objek NoshNest.
+* The NoshNest class has a constructor (__init__) that will read the CSV file using Pandas and store it as a df (DataFrame) attribute of the NoshNest object.
 
 ![model2](models/model2.png)
-* Metode rekomendasi digunakan untuk menghasilkan rekomendasi berdasarkan suatu produk, jumlah tertentu, dan mengembalikan jumlah rekomendasi teratas.
-* Pertama, objek DataFrame (df) dari kelas di-copy untuk memastikan tidak ada perubahan yang merusak data asli.
-* Metode NoshNest_Recommend dipanggil untuk melakukan filter berdasarkan produk dan jumlah.
-* DataFrame yang difilter kemudian diambil kolom-kolom tertentu (dari "Kabupaten_Kota" hingga "Produksi_Ton").
-* Hasilnya diurutkan berdasarkan kolom "Produksi_Ton" secara menurun, dan hanya diambil sejumlah teratas sesuai dengan parameter top.
+* The recommendation method is used to generate recommendations based on a product, a specified number, and returns the number of top recommendations.
+* First, the DataFrame (df) object of the class is copied to ensure that no changes break the original data.
+* The NoshNest_Recommend method is called to filter by product and quantity.
+* The filtered DataFrame then retrieves certain columns (from "Kabupaten_Kota" to "Produksi_Ton").
+* The results are sorted by the "Produksi_Ton" column in descending order, and only the top number is retrieved according to the top parameter.
 
 ![model3](models/model3.png)
-* Metode statis NoshNest_Recommend digunakan untuk melakukan filtering berdasarkan produk dan jumlah.
-* Data yang diberikan di-copy terlebih dahulu untuk menghindari perubahan pada data asli.
-* Jika produk (product) yang diberikan tidak None, maka dilakukan filtering berdasarkan produk tersebut. Filtering dilakukan pada baris-baris yang memiliki nilai True pada kolom produk.
-* Jika jumlah (amount) yang diberikan tidak None, maka dilakukan filtering berdasarkan jumlah produksi (Produksi_Ton) yang lebih besar atau sama dengan jumlah yang diberikan.
+* The static method NoshNest_Recommend is used to filter by product and quantity.
+* The given data is copied first to avoid changes to the original data.
+* If the given product (product) is not None, then filtering is done based on the product. Filtering is done on rows that have True value in the product column.* If the given amount is not None, then filtering is done based on the production amount (Produksi_Ton) which is greater than or equal to the given amount.
 
 
 # Evaluation
 ---
-Pada fase ini kita akan mencoba model yang telah dibuat sebelumnya 
+In this phase we will try the model that has been made before 
 
 ![evaluasi](models/evaluasi.png)
-* Membuat objek recsys dari kelas NoshNest.
-* Menggunakan file CSV dengan path '/content/data_lumbung.csv' sebagai data input untuk objek tersebut.
-* Memanggil metode rekomendasi dari objek recsys.
-* Memberikan parameter:
-    * product=['beras']: Menyaring rekomendasi hanya untuk produk 'beras'.
-    * amount=(300,): Menyaring rekomendasi hanya untuk jumlah produksi yang sama dengan atau melebihi 300 ton.
+* Create a recsys object from the NoshNest class.
+* Uses a CSV file with the path '/content/data_lumbung.csv' as input data for the object.
+* Calls the recommendation method of the recsys object.
+* Provides the parameters:
+    * product=['beras']: Filter recommendations only for the product 'rice'.
+    * amount=(300,): Filter recommendations only for production quantities equal to or exceeding 300 tons.
 
-setelah itu model akan memberikan hasil rekomendasi berupa lumbung yang menyediakan bahan pangan jenis beras dengan produksi minimum 300 ton
+after that the model will provide recommendation results in the form of granaries that provide rice-type foodstuffs with a minimum production of 300 tons.
 
 ![result](models/result.png)
  
