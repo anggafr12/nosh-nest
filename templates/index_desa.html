@@ -46,18 +46,21 @@
     <section class="section__container" id="form">
         <div class="container">
             <h2 class="section__header">FORM REQUEST BARANG</h2>
+                
             <form action="{{ url_for('recommend') }}" method="post" id="recommendForm">
                 <div class="form-group">
                     <label for="produk_pangan">Nama Barang:</label>
                     <input type="text" class="form-control" id="produk_pangan" name="produk_pangan" required>
                 </div>
-                
+
                 <div class="form-group">
                     <label for="produksi_ton">Jumlah Ton:</label>
                     <input type="number" class="form-control" id="produksi_ton" name="produksi_ton" required>
                 </div>
+
                 <button type="button" class="btn btn-primary" onclick="requestRecommendation()">REQUEST</button>
-            </form>                                    
+            </form>
+                                                        
             <h3>Hasil</h3>
             <div id="result">ini hasil</div>
         </div>
@@ -76,7 +79,7 @@
         function requestRecommendation() {
             const produk_pangan = document.getElementById('produk_pangan').value.toLowerCase();
             const produksi_ton = document.getElementById('produksi_ton').value;
-    
+
             // Make an AJAX request to the Flask server for recommendation
             fetch('/recommend', {
                 method: 'POST',
@@ -92,13 +95,14 @@
             })
             .catch(error => console.error('Error during recommendation:', error));
         }
-    
+
         function displayRecommendation(resultData) {
             console.log('Received data:', resultData);
 
             try {
                 if (resultData && resultData.length > 0) {
                     console.log('Recommendation data:', resultData);
+
                     // Clear previous results
                     const resultDiv = document.getElementById('result');
                     resultDiv.innerHTML = '';
@@ -106,19 +110,18 @@
                     // Display the recommendation data
                     for (const item of resultData) {
                         console.log('Item:', item);
-                        const kabupaten = item[0] || 'Unknown Kabupaten';
-                        const produk_pangan = item[1] || 'Unknown Produk Pangan';
-                        const produksi_ton = item[2] || 'Unknown Ton';
+                        const kabupaten = item.kabupaten || 'Unknown Kabupaten';
+                        const produk_pangan = item.produk_pangan || 'Unknown Produk Pangan';
+                        const produksi_ton = item.produksi_ton || 'Unknown Ton';
                         resultDiv.innerHTML += `<p>${kabupaten}: ${produk_pangan} ${produksi_ton} Ton</p>`;
                     }
                 } else {
                     console.error('Error during recommendation: Empty data');
                 }
             } catch (error) {
-                console.error('Error parsing JSON:', error);
+                console.error('Error displaying recommendation:', error);
             }
         }
-
     </script>    
     
     <script>

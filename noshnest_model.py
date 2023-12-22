@@ -32,6 +32,7 @@ class NoshNest:
             if connection.is_connected():
                 connection.close()
 
+
     def rekomendasi(self, produk=None, top=5):
       df = self.df.copy()
 

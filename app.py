@@ -23,6 +23,10 @@ def index():
 def masuk():
     return render_template('login.html')
 
+@app.route('/forgot')
+def forgot():
+    return render_template('forgot.html')
+
 def create_connection():
     connection = None
     try:
@@ -43,8 +47,8 @@ def create_connection():
 @app.route('/recommend', methods=['POST'])
 def recommend():
     # Get form data
-    produk_pangan = request.form['produk_pangan']
-    produksi_ton = int(request.form['produksi_ton'])
+    produk_pangan = request.form.get('produk_pangan')
+    produksi_ton = request.form.get('produksi_ton')
 
     print(f"Received form data: Produk Pangan={produk_pangan}, Produksi Ton={produksi_ton}")
 
