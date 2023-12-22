@@ -11,7 +11,7 @@ def create_connection():
             host='localhost',
             user='root',
             password='',
-            database='nosh_nest'
+            database='nosh_nest1'
         )
         if connection.is_connected():
             print('Connected to MySQL database')
@@ -27,7 +27,7 @@ def get_barang():
         connection = create_connection()
         if connection:
             cursor = connection.cursor(dictionary=True)
-            query = "SELECT * FROM data_barang"
+            query = "SELECT kode, kabupaten, produk_pangan, produksi_ton, tanggal_update FROM data_lumbung where kabupaten = 'Pacitan'"
             cursor.execute(query)
             data_barang = cursor.fetchall()
             return jsonify(data_barang)

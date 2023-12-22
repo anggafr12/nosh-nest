@@ -2,9 +2,16 @@ from flask import Flask, render_template, request, redirect, url_for, session, j
 import mysql.connector
 from mysql.connector import Error 
 from api import app_api
+import pandas as pd
+import numpy as np
+import pickle
+from noshnest_model import NoshNest
+import json
+
 
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'
+model=pickle.load(open("model.pkl", "rb"))
 
 app.register_blueprint(app_api)
 
@@ -23,7 +30,7 @@ def create_connection():
             host='localhost',
             user='root',
             password='',
-            database='nosh_nest'
+            database='nosh_nest1'
         )
         if connection.is_connected():
             print('Connected to MySQL database')
@@ -32,6 +39,25 @@ def create_connection():
         print(f"Error: {e}")
 
     return connection
+
+@app.route('/recommend', methods=['POST'])
+def recommend():
+    # Get form data
+    produk_pangan = request.form['produk_pangan']
+    produksi_ton = int(request.form['produksi_ton'])
+
+    print(f"Received form data: Produk Pangan={produk_pangan}, Produksi Ton={produksi_ton}")
+
+    # Make recommendations using the model
+    recommendations = model.rekomendasi(produk=[produk_pangan], top=5)
+
+    print("Recommendations:")
+    print(recommendations)  # Print recommendations for debugging
+
+    # Convert recommendations to a list of dictionaries
+    result_data = recommendations.to_dict(orient='records')
+
+    return jsonify({'status': 'success', 'data': result_data})
 
 @app.route('/login', methods=['POST'])
 def login():
@@ -91,7 +117,7 @@ def get_item_details(kode):
     connection = create_connection()
     cursor = connection.cursor(dictionary=True)
 
-    query = "SELECT * FROM data_barang WHERE kode = %s"
+    query = "SELECT * FROM data_lumbung WHERE kode = %s"
     cursor.execute(query, (kode,))
     item_details = cursor.fetchone()
 
@@ -116,18 +142,18 @@ def input_barang_page():
 def input_data_barang():
     if request.method == 'POST':
         kode = request.form['kode']
-        nama = request.form['nama']
-        jumlah = request.form['jumlah']
-        harga = request.form['harga']
-        tanggal = request.form['tanggal']
+        kab = request.form['kabupaten']
+        nama = request.form['produk_pangan']
+        jumlah = request.form['produksi_ton']
+        tanggal = request.form['tanggal_update']
 
         connection = create_connection()
 
         if connection:
             try:
                 cursor = connection.cursor(dictionary=True)
-                query = "INSERT INTO data_barang (kode, nama, jumlah, harga, tanggal) VALUES (%s, %s, %s, %s, %s)"
-                cursor.execute(query, (kode, nama, jumlah, harga, tanggal))
+                query = "INSERT INTO data_lumbung (kode, kabupaten, produk_pangan, produksi_ton, tanggal_update) VALUES (%s, %s, %s, %s, %s)"
+                cursor.execute(query, (kode, kab, nama, jumlah, tanggal))
                 connection.commit()
 
                 return redirect(url_for('lumbung'))
@@ -146,23 +172,23 @@ def input_data_barang():
 def update_barang():
     if request.method == 'POST':
         kode = request.form['kode']
-        nama = request.form['nama']
-        jumlah = request.form['jumlah']
-        harga = request.form['harga']
-        tanggal = request.form['tanggal']
+        nama = request.form['kabupaten']
+        jumlah = request.form['produk_pangan']
+        harga = request.form['produksi_ton']
+        tanggal = request.form['tanggal_update']
 
         connection = create_connection()
 
         if connection:
             try:
                 cursor = connection.cursor(dictionary=True)
-                query = "SELECT * FROM data_barang WHERE kode = %s"
+                query = "SELECT * FROM data_lumbung WHERE kode = %s"
                 cursor.execute(query, (kode,))
                 item_details = cursor.fetchone()
 
                 if item_details:
                     # Update the item details
-                    query = "UPDATE data_barang SET nama=%s, jumlah=%s, harga=%s, tanggal=%s WHERE kode=%s"
+                    query = "UPDATE data_lumbung SET kabupaten=%s, produk_pangan=%s, produksi_ton=%s, tanggal_update=%s WHERE kode=%s"
                     cursor.execute(query, (nama, jumlah, harga, tanggal, kode))
                     connection.commit()
 
@@ -184,7 +210,7 @@ def hapus_barang(kode):
     if connection:
         try:
             cursor = connection.cursor(dictionary=True)
-            query = "DELETE FROM data_barang WHERE kode = %s"
+            query = "DELETE FROM data_lumbung WHERE kode = %s"
             cursor.execute(query, (kode,))
             connection.commit()
 

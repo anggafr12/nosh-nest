@@ -33,20 +33,34 @@ class NoshNest:
                 connection.close()
 
     def rekomendasi(self, produk=None, top=5):
-        df = self.df.copy()
+      df = self.df.copy()
+
+      print("DataFrame Columns:", df.columns)
+      print("DataFrame Before Filtering:")
+      print(df.head())
+
+      if produk is not None and produk[0] in df['produk_pangan'].unique():
+        # Make recommendations using the model
         df = self.NoshNest_Recommend(df, produk=produk)
-        rekom = df.loc[:, "kabupaten": "produksi_ton"]
-        rekom = rekom.sort_values("produksi_ton", ascending=False).head(top)
-        return rekom
+
+        # Filter the DataFrame for the specified product
+        df_filtered = df[df['produk_pangan'] == produk[0]]
+
+        # Select the top N rows based on the 'produksi_ton' column
+        rekom = df_filtered.nlargest(top, "produksi_ton")
+
+        return rekom.loc[:, ["kabupaten", "produk_pangan", "produksi_ton"]]
+      else:
+          # Return an empty DataFrame or handle the case where the product is not found
+          return pd.DataFrame(columns=["kabupaten", "produk_pangan", "produksi_ton"])  
 
     @staticmethod
     def NoshNest_Recommend(df, produk):
-        df = df.copy()
-        if produk is not None and produk[0] in df.columns:
-            df = df[df[produk[0]] == 1]
+        if produk is not None and 'produk_pangan' in df.columns:
+            df = df[df['produk_pangan'] == produk[0]]
         return df
 
 # Example usage
 recsys = NoshNest(from_database=True)
-recsys.rekomendasi(produk=['beras'])
+# recsys.rekomendasi(produk=['beras'])
 pickle.dump(recsys, open("model.pkl", "wb"))

@@ -54,9 +54,9 @@
             <tr class="thead-dark">
                 <th>No</th>
                 <th>Kode</th>
-                <th>Nama</th>
+                <th>Lumbung</th>
+                <th>Nama Barang</th>
                 <th>Jumlah</th>
-                <th>Harga</th>
                 <th>Tanggal</th>
                 <th>Aksi</th>
             </tr>
@@ -85,10 +85,10 @@
                 row.innerHTML = `
                     <td>${index + 1}</td>
                     <td>${barang.kode}</td>
-                    <td>${barang.nama}</td>
-                    <td>${barang.jumlah}</td>
-                    <td>${barang.harga}</td>
-                    <td>${barang.tanggal}</td>
+                    <td>${barang.kabupaten}</td>
+                    <td>${barang.produk_pangan}</td>
+                    <td>${barang.produksi_ton}</td>
+                    <td>${barang.tanggal_update}</td>
                     <td>
                         <button onclick="editBarang('${barang.kode}')">
                             <i class="bi bi-pencil"></i> Edit
